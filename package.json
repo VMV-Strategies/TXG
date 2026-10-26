@@ -1,0 +1,41 @@
+{
+  "name": "threex-venture-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "THREE X | Venture Intelligence \u2014 cross-border structuring, tax and FIBA 3x3 business intelligence PWA (offline-first).",
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/serve.mjs dist 4173",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node --import tsx --test tests/unit/*.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm test && npm run build && npm run test:e2e",
+    "icons": "node scripts/icons.mjs",
+    "legal-pack": "node scripts/build-legal-pack.mjs"
+  },
+  "dependencies": {
+    "d3-sankey": "0.12.3",
+    "d3-shape": "3.2.0",
+    "jszip": "3.10.1",
+    "pdfjs-dist": "6.2.108",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/d3-shape": "3.2.0",
+    "@types/node": "26.6.3",
+    "esbuild": "0.28.2",
+    "playwright": "1.63.0",
+    "sharp": "0.35.4",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.12",
+    "typescript": "6.0.3"
+  }
+}

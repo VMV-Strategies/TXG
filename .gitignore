@@ -1,0 +1,24 @@
+# dependencies and build output
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.tsbuildinfo
+
+# PRIVATE DATA — never commit (see docs/PRIVACY.md)
+private/
+legal-pack/
+*.fact-pack.json
+*fact-pack*.json
+*.backup.json
+threex-backup-*.json
+*.xlsx
+*.xlsm
+*.pdf
+*.docx
+!tests/fixtures/**
+
+# local
+.DS_Store
+.env
+.env.*
